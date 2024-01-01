@@ -25,8 +25,8 @@ Deleting a savepoint is quite simple. Simply select the savepoint from the list 
 - More robust pop-ups/dialogues that make using the program more user-friendly
 
 # Version History #
-## v1.1 ##
+### v1.1 ###
 - Added cusom AppIcon to exe
 
-## v1.0 ##
+### v1.0 ###
 - Initial Commit
