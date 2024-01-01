@@ -23,3 +23,10 @@ Deleting a savepoint is quite simple. Simply select the savepoint from the list 
 # Future/Planned Features #
 - Support for browsers beyond Chrome
 - More robust pop-ups/dialogues that make using the program more user-friendly
+
+# Version History #
+## v1.1 ##
+- Added cusom AppIcon to exe
+
+## v1.0 ##
+- Initial Commit
