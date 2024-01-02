@@ -106,8 +106,8 @@ DELAY           =   500     # ms
 ODDS_OF_FUN     =   25      # The odds of having fun
 WIN_SEL_DELAY   =   5       # delay in seconds for user to select chrome window to create savepoint for
 AUTOGUI_SLEEP   =   0.1     # seconds
-AUTOGUI_MINISLP =   0.05
-MAX_DUP         =   5
+AUTOGUI_MINISLP =   0.075
+URL_ATTEMPTS    =   4       # Number of times program will attempt to copy URL
 
 # Return values
 SUCCESS     =   0
@@ -120,6 +120,7 @@ IND_NTABS   =   1
 # Misc Messages/Titles
 TXT_TITLE       =   "Chrome Browser Memory"
 FILENAME_SAVEPT =   'savepoints.json'
+APP_ICON        =   'AppIcon'
 
 # Dialog Messages
 WELCOME         =   """"""

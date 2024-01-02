@@ -1,4 +1,4 @@
-import webbrowser
+import webbrowser 
 from GUI_Source import *
 import subprocess, os, sys, platform, errno, winreg, re
 from time import sleep
@@ -106,7 +106,6 @@ def create_savePoint(id, list, main_window):
     f = open(FILENAME_SAVEPT, 'a')
     f.write(generate_json(id, urls))
     f.close()
-    # print(generate_json(id, urls))
     list.addItem("{0} ({1} tabs)".format(id, len(urls)))
 
 def restore_savepoint(savepoints_file, list_text, main_window, qlist):
@@ -246,7 +245,7 @@ def generate_array_json(array, indentation):
     return json_arr
 
 
-# parses json file and returns list of urls corresponding to given id
+# parses json file and returns list of urls corresponding to given id (not implemented)
 def get_urls(id):
     return
 
@@ -254,9 +253,8 @@ def get_urls(id):
 def next_tab():
     autogui.hotkey('ctrl', 'tab')
 
-# grabs url of current tabe
+# grabs url of current tab
 def get_url():
-    autogui.hotkey('ctrl', 'r')
-    autogui.hotkey('f6')            # Highlights url
+    autogui.hotkey('ctrl', 'l')     # Highlights url
     autogui.hotkey('ctrl', 'c')     # Copy url
     return Tk().clipboard_get()

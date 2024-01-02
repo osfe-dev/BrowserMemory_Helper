@@ -3,8 +3,8 @@ The Browser Memory Helper is a tool I designed to help save & manage your web br
 The tool is designed to help you save an entire browser window, so you can safely close it and restore it at a later time. As someone that likes to have separate browser windows for each little project I find myself working on, I often find myself with 4+ Chrome windows open at a time, each one often containing upwards of 10 tabs. Not only does this add strain to your computer's resources, but it can also add a lot of clutter. Normally, if you want to close the window but know you're going to want those tabs back at some later date (if you have say, 10 man pages for a programming assignment open that you know you'll have to get back to in a couple days) you'd have to manually go back and search for/re-open each individual tab. This tool is meant to save you that time & effort, allowing you to seamlessly resume exactly where you left off. By creating a savepoint for a browser window that gets stored on a local file on your computer, you can safely close the browser window and quickly restore at a later date.
 
 # Installation #
-- Navigate to "Releases" and download one of the zip files into its own folder. This is important because it will also generate a `savepoints.json` file that will track/save all of your browser window data, and needs to be located in the same directory as the executable.
-- Alternatively, you can also just download `BrowserMemory_Helper.exe` and `savepoints.json` from the main directory and put them in their own folder. This will often be the most current release
+- Navigate to "Releases" and download the folder containing the latest version of the program. Ensure that the exe and `savepoints.json` are in the same folder so that everything works together nicely.
+- Alternatively, you can choose to the version as one zip file instead of a folder, or a zip of one of the older versions of the program
 - That's it! Just run 'Chrome_BrowserMemory.exe' and follow the instructions to start saving/restoring your browser windows! For a more detailed explanation of how the program works, read 'Usage' below
 
 # Usage #
@@ -22,4 +22,18 @@ Deleting a savepoint is quite simple. Simply select the savepoint from the list 
 
 # Future/Planned Features #
 - Support for browsers beyond Chrome
-- More robust pop-ups/dialogues that make using the program more user-friendly
+- Better pop-ups/dialogue wording that make using the program more user-friendly
+- More robust tab number detection logic
+
+# Version History #
+### v1.2 ###
+- More efficient url highlighting/grabbing logic
+    - Old method involved reloading the web page to ensure that `f6`, which cycles through toolbar elements, always highlighted the url
+    - `ctrl+l` was discovered to just always highlight the url regardless of tab's current state, so switching to this was far more efficient & accurate
+- Fixed bug where, under certain conditions, program fails to register when it's read every tab and loops indefinitely
+
+### v1.1 ###
+- Added custom AppIcon to exe
+
+### v1.0 ###
+-Initial Commit

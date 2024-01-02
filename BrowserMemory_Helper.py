@@ -4,10 +4,10 @@ import ctypes
 
 def main():
     app = QApplication([])
-    # ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(TXT_TITLE)
+    ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(TXT_TITLE)
 
     app_icon = QtGui.QIcon()
-    # app_icon.addFile(APP_ICON)
+    app_icon.addFile(APP_ICON)
     app.setWindowIcon(app_icon)
 
     window = BrowserMem_Window()
