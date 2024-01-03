@@ -36,4 +36,4 @@ Deleting a savepoint is quite simple. Simply select the savepoint from the list 
 - Added custom AppIcon to exe
 
 ### v1.0 ###
--Initial Commit
+- Initial Commit
